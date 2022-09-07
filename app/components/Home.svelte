@@ -1,12 +1,18 @@
 <page>
     <actionBar title="Home" />
-    <gridLayout>
-        <label class="info" text={message} />
-    </gridLayout>
+    
+    <flexboxLayout flexDirection="column">
+	    <label class="info" text={message} />
+        <button text="Next page 1"  on:tap="{ () => navigate({ page: PageOne }) }" />
+    </flexboxLayout>
 </page>
 
 <script>
-    let message = "Hellow world"
+	import { navigate } from 'svelte-native'
+    import PageOne from './Page1.svelte'
+
+    let message = "Hellow worlds"
+    
 </script>
 
 <style>
