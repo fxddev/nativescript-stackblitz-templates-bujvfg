@@ -6,7 +6,7 @@
 </page>
 
 <script>
-    let message = "Hellow"
+    let message = "Hellow world"
 </script>
 
 <style>
